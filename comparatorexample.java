@@ -46,8 +46,9 @@ public class comparatorexample {
             al.add(objLibrary1);
             al.add(objLibrary2);
             al.add(objLibrary3);
+
             for (library n:al) {
-                System.out.println(n.getBookname());
+                System.out.println(n.getBookname()+"hello");
                   
                 
             }
