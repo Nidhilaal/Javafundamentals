@@ -1,4 +1,4 @@
-class A{
+class enterprise{
     int num;
     boolean value=false;
     public synchronized  void setNum(int num) {
@@ -28,8 +28,8 @@ class A{
 }
 
 class producer implements Runnable{
-    A q;
-    public producer(A q) {
+    enterprise q;
+    public producer(enterprise q) {
         this.q = q;
         Thread t= new Thread(this,"producer");
         t.start();
@@ -47,9 +47,9 @@ class producer implements Runnable{
 }
 
 class consumer implements Runnable{
-    A q;
+    enterprise q;
 
-    public consumer(A q) {
+    public consumer(enterprise q) {
         this.q = q;
         Thread t= new Thread(this,"consumer");
         t.start();
@@ -68,7 +68,7 @@ class consumer implements Runnable{
 
 public class waitnotify {
     public static void main(String[] args) {
-        A q=new A();
+        enterprise q=new enterprise();
         new producer(q);
         new consumer(q);
     } 

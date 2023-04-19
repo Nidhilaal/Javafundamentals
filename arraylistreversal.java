@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-interface a{
+interface sample{
     ArrayList m(ArrayList al);
 }
 
-class b implements a{
+class example implements sample{
     public ArrayList<Integer> m(ArrayList al){
         int temp;
         for (int i=0;i<al.size()/2;i++){
@@ -27,7 +27,7 @@ public class arraylistreversal{
         al.add(s.nextInt());
     }
     s.close();
-    b oB=new b();
+    example oB=new example();
     oB.m(al);
     System.out.println(al);
     for (int m: al) {

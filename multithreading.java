@@ -1,4 +1,4 @@
-class hi extends Thread{
+class threadsample extends Thread{
     public void run(){
         for (int i=0;i<6;i++){
             System.out.println("hi");
@@ -22,7 +22,7 @@ public class multithreading{
                 }
             };
 
-        hi obHi= new hi();
+        threadsample obHi= new threadsample ();
         Thread t=new Thread(objHello);
         t.start(); 
         try {
